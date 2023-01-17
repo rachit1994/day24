@@ -3,7 +3,7 @@ const logger = require("morgan");
 const app = express();
 const RedisClient = require("./config/connectRedis");
 const scheduleRoutes = require("./routes/scheduleRoutes");
-require("./services/scheduler");
+// require("./services/scheduler");
 require("dotenv").config();
 
 app.use(express.json());
