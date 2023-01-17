@@ -13,7 +13,7 @@ app.use(express.static("client"));
 app.use("/api/v1/schedule", scheduleRoutes);
 
 app.listen(process.env.PORT, async () => {
-  console.log("server is running");
+  console.log("server is running ", process.env.PORT);
   RedisClient.connect()
   .then(() => {
     console.log("Connected to redis")
